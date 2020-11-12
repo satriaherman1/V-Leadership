@@ -5,10 +5,10 @@
         <body>
 
 <!-- admin sidebar -->
-        <nav class="nav m-auto  fixed-top  text-white" style="height: 70px; width:100% !important; background:  #152238; ">
-            <h3 class="nav-link mx-auto" style="line-height: 50px;">SMEA_PILKETOS</h3>
+        <nav class="nav m-auto    text-body" style="height: 70px; width:100% !important; background:  #fff; position:relative;">
+            <!-- <h3 class="nav-link mx-auto" style="line-height: 50px;">SMEA_PILKETOS</h3> -->
           
-                <a href="<?= base_url('admin/logout'); ?>" class="mr-5 text-right text-light" style="text-decoration:none;  line-height: 70px;"> <i class="fas fa-sign-out-alt"></i> logout </a>
+                <a href="<?= base_url('admin/logout'); ?>" class="mr-5 text-body" style="text-decoration:none;  line-height: 70px; right:10px; position:absolute;"> <i class="fas fa-sign-out-alt"></i> logout </a>
         
 
         </nav>
@@ -18,13 +18,35 @@
             
                     <div class="wrapper">
 
-                        <nav id="sidebar" style="  background: #192841;">
+                        <nav id="sidebar" style="  background: #fff;">
+
+                            <div class="side-brand mt-3">
+                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="25px" height="25px" style="border-radius:100p; float:left" alt="" srcset="">
+                                <p class="brand-name">V-Leadership</p>
+
+                            </div>
+                            <hr class="mt-4">
                             <!-- Sidebar Header -->
-                            <div class="sidebar-header text-white text-center " style="width: 100%;">
-                                <i class="fas fa-user-circle mt-4 " style="z-index : 8; font-size: 60px;"></i>
-                                <h4 class="text-center " style="margin-left: -3px;"> Admin </h4>
+                            <div class="sidebar-header text-body  mt-5" style="width: 100%;">
+                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="60px" height="60px" style="float:left" alt="" srcset="">
+                            
+                                <p class="mb-4">
+                                <span style="margin-top: -20px; font-weight:bold; font-size:24px">Admin</span>
+                                    <!-- <br> -->
+                                    <!-- <br>
+                                    <br> -->
+                                <span style="font-size: 14px;">administrator</span>
+                                </p>
+
+                                
 
                                 <hr class="bg-white" style="width: 80%;">
+                            </div>
+
+                            <div class="sub-title ml-4 mb-3">
+                                <p class="content-subtitle" style="color:#AEAEAE; font-size:16px;" >
+                                    Core
+                                </p>
                             </div>
 
                             <!-- Sidebar Links -->
@@ -51,7 +73,7 @@
                 
 
                 <div class="col-md-10 ml-3">
-                    <div class="side-content " style="margin-top: 120px; width:100%; margin-left:250px;" >
+                    <div class="side-content " style="margin-top: 40px; width:100%; margin-left:250px;" >
                    <!-- card -->
                     <h4 class="mt-4"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</h4>
 
@@ -61,32 +83,36 @@
                             <div class="row " style="width: 100%;">
                                 <div class="col-md-4 ">
                                     
-                                    <div class="card border-0 shadow-1 card1 " id="card" style="width:100%; background-color:#ed7537";  >
-                                    <div class="card-body">
-                                        <h1 class="card-title"><?= $sudah_memilih[0]['jumlah'] ?> murid</h1>
-                                        <p class="card-text">Sudah memilih</p>
+                                    <div class="card border-0 shadow-1 card1 " id="card" style="width:100%; background-color:#fff";  >
+                                    <div class="card-body ">
+                                        <i class="fas fa-calendar-check icon-card icon-2"></i>
+                                        <h3 class="card-title mt-2 sudah" style="margin-left: 110px; font-weight:bold;"></h3>
+                                        <p class="card-text  " style="margin-left: 110px; color:#AEAEAE; ">Sudah memilih</p>
                                         
                                     </div>
                                     </div>
                                 </div>
-
+                                
                                 <div class="col-md-4">
                                     
-                                    <div class="card border-0 shadow-1 card2 " id="card" style="width:100%; background-color:#1081c1";  >
+                                    <div class="card border-0 shadow-1 card2 " id="card" style="width:100%; background-color:#fff";  >
                                     <div class="card-body">
-                                        <h1 class="card-title"><?= $pemilih[0]['jumlah'] - $sudah_memilih[0]['jumlah']  ?> murid</h1>
-                                        <p class="card-text">belum memilih</p>
+                                        <i class="fas fa-times-circle icon-card icon-3 "></i>
+                                         <h3 class="card-title mt-2 masih" style="margin-left: 110px; font-weight:bold;"> </h3> 
+                                        <p class="card-text" style="margin-left: 110px; color:#AEAEAE;">belum memilih</p>
                                         
                                     </div>
-                                    </div>
                                 </div>
-
+                                </div>
+                                
                                 <div class="col-md-4">
                                     
-                                    <div class="card border-0 shadow-1 card3 " id="card" style="width:100%; background-color:#0ebbb2";  >
+                                    <div class="card border-0 shadow-1 card3 " id="card" style="width:100%; background-color:#fff";  >
                                     <div class="card-body">
-                                        <h1 class="card-title"><?= $pemilih[0]['jumlah'] ?> murid</h1>
-                                        <p class="card-text">Jumlah pemilih</p>
+                                        <i class="fas fa-users icon-card icon-1"></i>
+                                       
+                                        <h3 class="card-title mt-2" style="margin-left: 110px; font-weight:bold;"><?= $pemilih[0]['jumlah'] ?> </h3>
+                                        <p class="card-text" style="margin-left: 110px; color:#AEAEAE;">Jumlah pemilih</p>
                                         
                                     </div>
                                     </div>
@@ -129,6 +155,7 @@
             </style>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+         
 
             <script src="<?= base_url('assets/js/admin/index.js'); ?>"></script>
 
@@ -137,6 +164,40 @@
             <script>
 
         window.onload = function(){
+           
+            function get_pemilih(){
+                var xhr = new XMLHttpRequest();
+                var el = document.querySelector('.sudah')
+                var el2 = document.querySelector('.masih')
+                //             url : "",
+                var url = '<?= base_url('admin/showPemilih'); ?>';
+                xhr.open("GET" , url , true);
+                xhr.send()
+                xhr.onload = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        var i;
+
+                        var obj = this.response
+                        pemilih = JSON.parse(obj)
+
+                        for( i=0 ; i < pemilih['sudah_memilih'].length ; i++ ){
+                            el.innerHTML = `  <h3 class="card-title" style=" font-weight:bold;">${pemilih['sudah_memilih'][0]['jumlah']} </h3>`
+                            el2.innerHTML = `<h3 class="card-title" style=" font-weight:bold;">`+ (pemilih['pemilih'][0]['jumlah'] - pemilih['sudah_memilih'][0]['jumlah']) +`</h3>`
+                            console.log(pemilih)
+                        }
+                        
+                    }
+                }
+            }
+
+            setInterval(  function(){
+                get_pemilih()
+
+            }, 2000 )
+
+          
+
+
                
                //chart
                function chart1(){
@@ -173,20 +234,22 @@
                })
            
                }
-           
-               function chart2(){
+
+            //    chart bar
+
+            function chart2(){
                    var ctxL = document.getElementById("line").getContext('2d');
                    var myLineChart = new Chart(ctxL, {
                        type: 'bar',
                        data: {
-                         labels: [<?php foreach($ketua2 as $daftar): ?>
+                         labels: [<?php foreach($ketua1 as $daftar): ?>
                                     "<?= $daftar['nama']?>",
 
                                 <?php endforeach;?>],
                          datasets: [
                            {
-                             label: ["My First dataget"],
-                             data: [ <?php foreach($ketua2 as $daftar): ?>
+                             label: ["jumlah"],
+                             data: [ <?php foreach($ketua1 as $daftar): ?>
                                     "<?= $daftar['jumlah']?>",
 
                                 <?php endforeach;?> ],
@@ -201,13 +264,40 @@
                          ]
                        },
                        options: {
-                         responsive: true
+                         responsive: true,
+                         scales : {
+                             yAxes : [{
+                                 ticks : {
+                                     min : 0
+                                 }
+                             }]
+                         }
                        }
                      });
                
                    }
            
+              
+           
                    chart1();
                    chart2();
                 }
+
+                // $(document).ready(function(){
+                //     function show_pemilih(){
+                //         $.ajax({
+                //             type : 'ajax',
+                //             async : true,
+                //             dataType: 'json',
+                //             success: function (data){
+                //                 console.log(data);
+                //             }
+                //         })
+                //     }
+
+                //     show_pemilih();
+                // })
+
+
+
             </script>

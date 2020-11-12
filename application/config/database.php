@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'db-pilketos.mysql.database.azure.com',
-	'username' => 'adminganteng@db-pilketos',
-	'password' => 'Pilketoshokyahokya!123',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'pilketos',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -88,10 +88,7 @@ $db['default'] = array(
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => array(
-		'ssl_ca' => realpath('./BaltimoreCyberTrustRoot.crt'),
-		'ssl_verify' => false
-	),
+	'encrypt' => false,
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),

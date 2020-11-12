@@ -3,7 +3,8 @@ body{
     padding: 0;
     margin: 0;
     overflow: scroll;
-    background: #f0f8ff;
+    background: #f1f3fa;
+    /* font-family: 'poppins' , sans-serif; */
 }
 /* sidebar item */
 .sidebar-header h4{
@@ -11,20 +12,32 @@ body{
     margin: 10px 0 30px 20px;
 }
 li.active{
-    background: #000;
-    color: salmon;
+    background: rgb(230, 236, 253);
+    color: #fff;
+    border-right: 7px solid rgb(41, 87, 223);
+   
+    
+}
+
+li.active a{
+    color: rgb(41, 87, 223);
+    font-weight: 500;
 }
 li.item{
-    padding: 30px 40px;
+    padding: 20px 26px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
 }
 
 .item a{
+    color: rgb(136, 136, 136);
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    font-size: 16px;
 }
 
 li.item:hover{
-    background: #000;
+    background:rgb(230, 236, 253);
 }
 #sidebarCollapse{
     position: fixed;
@@ -33,7 +46,7 @@ li.item:hover{
     background: none;
     border: none;
     margin-left: 250px;
-    margin-top: 70px;
+    margin-top: -60px;
     transition: 1s;
     z-index: 999;
     
@@ -80,9 +93,9 @@ li.item:hover{
 
 #sidebar{
     position: fixed;
-    top: 70px;
-    max-width: 250px;
-    min-width: 250px;
+    top: 0px;
+    max-width: 230px;
+    min-width: 230px;
     background: #133337;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: center left;

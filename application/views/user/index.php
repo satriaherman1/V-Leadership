@@ -4,14 +4,19 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <body>
-<div class="top-bar justify-content-left fixed-top text-white" style="display:flex; width: 100% ; height: 70px;  background: #081B33;">
-                <div class="atas"><div class="image" ></div>    <h3 class="ml-2" style="line-height:70px;"> SMEA-PILKETOS</h3> </div>
-</div>
+        <div class="top-bar shadow justify-content-left fixed-top text-body" style=" width: 100% ; height: 90px;  background: #fff; ">
+            <div class="container top-content">
+                <div class="atas">
+                    <div class="image" ></div> 
+                    <h5 class="ml-2 mt-1 " > V-Leadership</h5> 
+                </div>   
+                
+            </div>
+        </div>
 
-
-    <div class="container">
-    <h2 style="margin-top: 100px;">Pilih Kandidat Ketua kelas 11</h2>
-            <hr>
+    <div class="container mt-5">
+    <h2 style="margin-top: 150px; color:#fff;">Pilih Kandidat calon Ketua </h2>
+            <hr style="height: 1px; background-color:#fff;">
         <div class="content-container">
            
             <?php foreach($ketua_1 as $daftar): ?>
@@ -34,11 +39,11 @@
         </div>
     </div>
 <!-- footer -->
-    <footer class=" justify-content-center text-center " style="padding: 20px; width:100%; background: #f0f8ff;">
+    <footer class=" justify-content-center text-center mt-4" style="padding: 20px; width:100%; background: #fff;">
     <div class="footer-container" >
         <div class="social-media">
-        <h6 class="text-body mt-4" ><i class="far fa-copyright"></i> Komunitas <span style="color: #2ab7ca ;"> Teknik Informatika </span> </h6>
-            <a href="http://facebook.com"><i class="fab fa-facebook-square text-dark mr-3"></i></a>
+        <h6 class="text-body mt-4" ><i class="far fa-copyright"></i> Satria Herman 2020  </h6>
+            <a href="https://www.facebook.com/satria.herman.9465"><i class="fab fa-facebook-square text-dark mr-3"></i></a>
             <a href="http://instagram.com"><i class="fab fa-instagram text-dark"></i></a>
         </div>
     </div>
@@ -46,29 +51,34 @@
 
 <style>
     body{
-        background: #f0f8ff;
+        background:#2ab7ca;
         font-family: 'poppins' , sans-serif;
+        overflow: scroll;
     }
 
     
      /* top nav */
      .atas{
-        margin-right:auto;
-        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: auto ;
         display: flex;
         }
 
     .image{
         height: 30px;
         width: 30px;
-        background-image: url('<?= base_url(); ?>assets/resources/home/smk.png');
+        background-image: url('<?= base_url(); ?>assets/resources/home/icon-app.png');
         background-position: center center;
         background-size: cover;
-        margin-top: auto;
         margin-bottom: auto;
-    
+    }
                 
-            }
+        
+
+    .top-content{
+        padding: 30px;
+    }
+
 
     .content-container{
         margin-top: 70px;

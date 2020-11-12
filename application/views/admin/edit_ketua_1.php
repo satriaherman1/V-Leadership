@@ -38,9 +38,7 @@
                     <textarea class="form-control" id="visi" name="visi" rows="3" > <?= $daftar['visi']; ?> </textarea>
                 </div>
 
-                <div class="form-group">
-                    <input type="file" value="pilih foto" name="foto" id="foto">
-                </div>
+           
 
             <button class="btn btn-primary mt-4" type="submit" name="submit"  id="submit">
                 ubah data

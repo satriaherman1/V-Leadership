@@ -7,10 +7,12 @@
     </head>
         <body>
 
-<!-- admin sidebar -->
-        <nav class="nav m-auto  fixed-top text-white" style="height: 70px; width:100% !important; background: #152238;">
-            <h3 class="nav-link m-auto" style="line-height:50px;">SMEA-PILKETOS</h3>
-             <a href=" <?= base_url('admin/logout'); ?>" class="mr-5 text-light" style="text-decoration:none; float: right; line-height: 70px;"> <i class="fas fa-sign-out-alt"></i> logout </a>
+        <nav class="nav m-auto    text-body" style="height: 68px; width:100% !important; background:  #fff; position:relative;">
+             
+          
+            <a href="<?= base_url('admin/logout'); ?>" class="mr-5 text-body" style="text-decoration:none;  line-height: 70px; right:10px; position:absolute;"> <i class="fas fa-sign-out-alt"></i> logout </a>
+        
+
         </nav>
           
             <div class="row" >
@@ -18,19 +20,41 @@
             
                     <div class="wrapper">
 
-                        <nav id="sidebar" style="  background: #192841;">
+                        <nav id="sidebar" style="  background: #fff;">
+
+                            <div class="side-brand mt-3">
+                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="25px" height="25px" style="border-radius:100p; float:left" alt="" srcset="">
+                                <p class="brand-name">V-Leadership</p>
+
+                            </div>
+                            <hr class="mt-4">
                             <!-- Sidebar Header -->
-                            <div class="sidebar-header text-white text-center " style="width: 100%;">
-                                <i class="fas fa-user-circle mt-4 " style="z-index : 8; font-size: 60px;"></i>
-                                <h4 class="text-center " style="margin-left: -3px;"> Admin </h4>
+                            <div class="sidebar-header text-body  mt-5" style="width: 100%;">
+                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="60px" height="60px" style="float:left; border-radius:100px;" alt="" srcset="">
+                            
+                                <p class="mb-4">
+                                <span style="margin-top: -20px; font-weight:bold; font-size:24px">Admin</span>
+                                    <!-- <br> -->
+                                    <!-- <br>
+                                    <br> -->
+                                <span style="font-size: 14px;">administrator</span>
+                                </p>
+
+                                
 
                                 <hr class="bg-white" style="width: 80%;">
                             </div>
 
+                            <div class="sub-title ml-4 mb-3">
+                                <p class="content-subtitle" style="color:#AEAEAE; font-size:16px;" >
+                                    Core
+                                </p>
+                            </div>
+
                             <!-- Sidebar Links -->
                             <ul class="list-unstyled components">
-                                <li class="item"><a href="<?= base_url(); ?>admin"> <i class="fas fa-chart-line mr-3"></i>Dashboard</a></li>
-                                <li class="active item"><a href="<?= base_url(); ?>admin/daftar_kandidat" ><i class="fas fa-user-graduate mr-3"></i>Daftar Kandidat</a></li>
+                                <li class=" item"><a href="<?= base_url() ?>admin"> <i class="fas fa-chart-line mr-3"></i>Dashboard</a></li>
+                                <li class="active item"><a href="<?= base_url() ?>admin/daftar_kandidat" ><i class="fas fa-user-graduate mr-3"></i>Daftar Kandidat</a></li>
                                 <!-- Link with dropdown items -->
                                 
                                 <li class="item"><a href="<?= base_url(); ?>admin/lihat_hasil" ><i class="fas fa-poll mr-3"></i>Lihat Hasil</a></li>
@@ -52,7 +76,7 @@
 
                 <div class="col-md-10 ">
                     <div class="content-container ">
-                        <h3 class="mt-5">Kandidat Ketua 1 </h3>
+                        <h3 class="mt-5">Kandidat Ketua  </h3>
                    
 
                         <hr style="width: 80%; margin-left:0;">
@@ -97,42 +121,7 @@
 
                         <!-- ketua 2 -->
 
-                        <h3  style="margin-top: 100px;">Kandidat Ketua 2 </h3>
-                   
-
-                        <hr style="width: 80%; margin-left:0;">
-
-                        <div class="table_container mt-5 mb-5" style="background:#fff; max-width:1100px; min-width:600px; padding : 20px; position:relative;">
-                            <table id="daftar_kandidat_2" class="table table-striped table-bordered" style="width:100%; ">
-                                <thead>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>Kelas</th>
-                                        <th>Visi & Misi</th>
-                                        <th>Foto</th>
-                                        <th>opsi</th>
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                <?php foreach($ketua_2 as $daftar):?>    
-                                    <tr>
-                                        <td><?= $daftar['nama'];?></td>
-                                        <td><?= $daftar['kelas'];?></td>
-                                        <td><?= $daftar['visi'];?></td>
-                                        <td> <img src="<?= base_url()?>/assets/resources/kandidat/<?= $daftar['foto']; ?>" alt="" srcset="" width="80px" height="100px">  </td>
-                                        <th> <a href="<?= base_url(); ?>admin/edit_ketua_2/<?= $daftar['id'] ?>" class="btn btn-primary"><i class="fas fa-edit text-white "></i></a><a href="<?= base_url(); ?>admin/hapus_ketua_2/<?= $daftar['id'];?>" class="mt-3 btn btn-danger"onclick="confirm('apkah yakin ingin dihapus?')"><i class="fas fa-trash-alt text-white "></i></a></th>
-                                    </tr>
-                                <?php endforeach; ?>
-                                    
-                                </tbody>
-                        
-                                
-                            </table>
-
-                            <a href="<?= base_url(); ?>/admin/tambah_ketua_2" class="btn btn-primary mt-4" id="tambah">Tambah Kandidat</a>
-                        </div>
+                     
                     </div>
                 </div>
             </div>
@@ -155,7 +144,7 @@
             <script>
                 $(document).ready(function(){
                     $('#daftar_kandidat').DataTable();
-                    $('#daftar_kandidat_2').DataTable();
+              
                 })
             </script>
             <script src="<?= base_url('assets/js/admin/daftar_kandidat.js'); ?>">

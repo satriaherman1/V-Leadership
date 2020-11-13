@@ -4,7 +4,7 @@
     </head>
         <body style=" color:#fff;">
     
-
+          
             <div class="top-bar shadow justify-content-left fixed-top text-body" style=" width: 100% ; height: 90px;  background: #fff; ">
                 <div class="container">
                     <div class="atas">
@@ -19,7 +19,7 @@
                     <div class="image" ></div>    <h5 class="ml-2 my-auto" > V-Leadership</h5> </div>
                     <div class="nav" style="margin-top: -46px; ml-auto;">
                             <a href="" class="nav-el-1 navigation-element nav-1" >Lihat Hasil</a>
-                            <a href="" class="navigation-element nav-1" >Login Admin</a>
+                            <a href="<?= base_url('admin') ?>" class="navigation-element nav-1" >Login Admin</a>
 
 
                         <div class="nav-el">
@@ -29,15 +29,15 @@
                             <div class="pemisah mt-4"></div>
 
                             <div class="brand mt-4">
-                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" style="float: left; display:block; margin-left:20px;" width="30px" height="30px" alt="" class="brand">
+                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" style="float: left; display:block; margin-left:30px;" width="30px" height="30px" alt="" class="brand">
                                 <div class="brand-name mt-1 ml-2 font-weight-bold" style="float: left;">V-Leadership</div>
                                 <span class="close" style="cursor: pointer;">x</span>
                                 <div style="clear: both;"></div>
 
                                 <hr style="width: 80%; height: .6px; background: #dbdbdb;" class="mx-auto">
                             </div>
-                            <a href="" class="nav-el-1 navigation-element " > <i class="fas fa-eye ml-4 mr-2"></i>Lihat Hasil</a>
-                            <a href="<?= base_url('admin') ?>" class="navigation-element" > <i class="fas fa-user-cog ml-4 mr-2"></i>Login Admin</a>
+                            <a href="" class="nav-el-1 navigation-element ml-1" > <i class="fas fa-eye  mr-2" style="margin-left: 35px;"></i>Lihat Hasil</a>
+                            <a href="<?= base_url('admin') ?>" class="navigation-element " > <i class="fas fa-user-cog mr-2" style="margin-left: 35px;"></i>Login Admin</a>
 
                         </div>
 
@@ -194,6 +194,8 @@
                     </div>
                 </div>
             </footer>
+
+   
 
             <style>
                 html{
@@ -402,6 +404,20 @@
                 .guide-icon-3{
                     background: #11ba35;
                 }
+
+                /* absolute */
+
+                .nav::before{
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #000;
+                    z-index: 1;
+                    left:100%;
+                    opacity: .3;
+                }
+                
 
                 @media ( max-width: 768px){
                     .content{

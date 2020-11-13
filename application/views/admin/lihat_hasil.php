@@ -6,189 +6,147 @@
     </head>
         <body>
 
-<!-- admin sidebar -->
-<nav class="nav m-auto    text-body" style="height: 68px; width:100% !important; background:  #fff; position:relative;">
-             
-          
-             <a href="<?= base_url('admin/logout'); ?>" class="mr-5 text-body" style="text-decoration:none;  line-height: 70px; right:10px; position:absolute;"> <i class="fas fa-sign-out-alt"></i> logout </a>
-         
- 
-         </nav>
-           
-             <div class="row" >
-                 <div class="col-md-2">
-             
-                     <div class="wrapper">
- 
-                         <nav id="sidebar" style="  background: #fff;">
- 
-                             <div class="side-brand mt-3">
-                                 <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="25px" height="25px" style="border-radius:100p; float:left" alt="" srcset="">
-                                 <p class="brand-name">V-Leadership</p>
- 
-                             </div>
-                             <hr class="mt-4">
-                             <!-- Sidebar Header -->
-                             <div class="sidebar-header text-body  mt-5" style="width: 100%;">
-                                 <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="60px" height="60px" style="float:left; border-radius:100px;" alt="" srcset="">
-                             
-                                 <p class="mb-4">
-                                 <span style="margin-top: -20px; font-weight:bold; font-size:24px">Admin</span>
-                                     <!-- <br> -->
-                                     <!-- <br>
-                                     <br> -->
-                                 <span style="font-size: 14px;">administrator</span>
-                                 </p>
- 
-                                 
- 
-                                 <hr class="bg-white" style="width: 80%;">
-                             </div>
- 
-                             <div class="sub-title ml-4 mb-3">
-                                 <p class="content-subtitle" style="color:#AEAEAE; font-size:16px;" >
-                                     Core
-                                 </p>
-                             </div>
- 
-                             <!-- Sidebar Links -->
-                             <ul class="list-unstyled components">
-                                 <li class=" item"><a href="<?= base_url() ?>admin"> <i class="fas fa-chart-line mr-3"></i>Dashboard</a></li>
-                                 <li class="item"><a href="<?= base_url() ?>admin/daftar_kandidat" ><i class="fas fa-user-graduate mr-3"></i>Daftar Kandidat</a></li>
-                                 <!-- Link with dropdown items -->
-                                 
-                                 <li class="active item"><a href="<?= base_url(); ?>admin/lihat_hasil" ><i class="fas fa-poll mr-3"></i>Lihat Hasil</a></li>
-                                
-                             </ul>
-                         </nav>
- 
-                         <div id="content">
-                             <button type="button" id="sidebarCollapse" class="navbar-btn">
-                                 <span></span>
-                                 <span></span>
-                                 <span></span>
-                             </button>
-                         </div>
- 
-                     </div>
-                 </div>  
-                
-
-                <div class="col-md-10 ">
-                    <div class="content-container" style="margin-top: 120px; margin-left: 100px;">
-
-                    <h2>Daftar Kandidat</h2>
-                    <hr class="mb-5 bg-dark-10">
-
-                    <div class="card-container ketua-1">
-                        <!-- card -->
-                        <div class="card" style="min-width:19rem; max-width:19rem; position: relative;">
-                            <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $ketua_1[0]['foto'] ?>" style="width:100%; height:300px;"></div>
-                            <div class="card-body">
-                                <h4 class="card-title text-center text-info p-2" ><?= $ketua_1[0]['nama'] ?></h4>
-                            
-                                <p class="card-text "><h1 class="text-center jumlah"><?= $ketua_1[0]['jumlah'] ?></h1></p>
-                                <a href="<?= base_url(); ?>admin/detail_kandidat_1/<?= $ketua_1[0]['id'] ?>" class="btn detail btn-success" style="width: 90%;">Lihat Detail</a>
-                            </div>
+        <div class="row">
+            <div class="col-md-2 fixed-top" id="sidebar-content" >
+                <div id="sidebar ">
+                    <div class="side-header">
+                        <span class="close text-white" onclick="close()">x</span>
+                        <img src="<?= base_url('assets/resources/home/icon-app.png') ?> " class=" mr-2 header-img" width="40px"  height="40px" alt="" srcset="">
+    
                         
-                        </div>
-
-
-                        <!-- card 2 -->
-
-                        <div class="card" style="min-width:19rem; max-width:19rem; position: relative;">
-                            <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $ketua_1[1]['foto'] ?>" style="width:100%; height:300px; background-position: center center;"></div>
-                            <div class="card-body">
-                                <h4 class="card-title text-center text-info p-2" ><?= $ketua_1[1]['nama'] ?></h4>
-                            
-                                <p class="card-text "><h1 class="text-center jumlah2"><?= $ketua_1[1]['jumlah'] ?></h1></p>
-                                <a href="<?= base_url(); ?>admin/detail_kandidat_1/${pemilih[i]['id']}" class="btn detail btn-success" style="width: 90%; ">Lihat Detail</a>
-                            </div>
-                        
-                        </div>
-
-                        <div class="card" style="min-width:19rem; max-width:19rem; position: relative;">
-                            <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $ketua_1[2]['foto'] ?>" style="width:100%; height:300px; background-position: center 10%;"></div>
-                            <div class="card-body">
-                                <h4 class="card-title text-center text-info p-2" ><?= $ketua_1[2]['nama'] ?></h4>
-                            
-                                <p class="card-text "><h1 class="text-center jumlah3"><?= $ketua_1[2]['jumlah'] ?></h1></p>
-                                <a href="<?= base_url(); ?>admin/detail_kandidat_1/${pemilih[i]['id']}" class="btn detail btn-success" style="width: 90%; ">Lihat Detail</a>
-                            </div>
-                        
-                        </div>
-
-                        <div class="card" style="min-width:19rem; max-width:19rem; position: relative;">
-                            <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $ketua_1[3]['foto'] ?>" style="width:100%; height:300px; background-position: center 10%;"></div>
-                            <div class="card-body">
-                                <h4 class="card-title text-center text-info p-2" ><?= $ketua_1[3]['nama'] ?></h4>
-                            
-                                <p class="card-text "><h1 class="text-center jumlah4"><?= $ketua_1[3]['jumlah'] ?></h1></p>
-                                <a href="<?= base_url(); ?>admin/detail_kandidat_1/${pemilih[i]['id']}" class="btn detail btn-success" style="width: 90%;">Lihat Detail</a>
-                            </div>
-                        
-                        </div>
-
-
-
+                        <h6 class ="header-name mt-5">V-Leadership</h6>
+    
+                        <div style="clear: both;"></div>
+                        <hr style="height: .3px; background: #4D4D98;">
                     </div>
-
-                  
-
+    
+                    <div class="side-content" style="position: relative;">
+                        <ul class="list-group " style="width: 100%; position: absolute;">
+                            <li class="list-group-item mini-side-content side-menu">core</li>
+                            <li class="list-group-item   side-menu dash-menu" >
+                                <i class="fas fa-columns ml-4 mr-2 "></i> <a href="<?= base_url('admin') ?>" > <span class="side-menu"> Dashboard</span></a> </li>
+                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;    "> <a href="<?= base_url('admin/daftar_kandidat') ?>" > <i class="fas fa-chart-pie ml-4 mr-2"></i> <span class="side-menu"> Statistic</span> </a>   </li>
+                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;  background: #10106B; border: 0;  border-right: 8px solid #2323EE; " > <a class="text-white" href="  <?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-address-card ml-4 mr-2"></i><span class="side-menu"> Lihat Hasil</span> </a> </li>
+                        </ul>
                     </div>
+    
                 </div>
             </div>
-
-            <hr style="width: 100%; margin-top:200px;"> 
-            <footer class=" justify-content-center   text-center mt-4" style="padding: 0px 0px 25px 0; ">
-                    <h6 cl><i class="far fa-copyright"></i> Komunitas <span style="color: #2ab7ca ;"> Teknik Informatika </span> </h6>
-                    <div class="social-media">
-                        <a href="http://facebook.com"><i class="fab fa-facebook-square text-dark mr-3"></i></a>
-                        <a href="http://instagram.com"><i class="fab fa-instagram text-dark"></i></a>
+    
+            <!-- main content -->
+    
+            <div class="col content-main">
+    
+                <nav class="nav " style="float: right ;">
+                    <div id="menu-toggler" class="ml-4" >
+                        <div class="menubar"></div>
+                        <div class="menubar"></div>
+                        <div class="menubar"></div>
                     </div>
-            </footer>
+                   
+                    <div class="content">
+                        <a href="<?= base_url('admin/logout') ?>" class="nav-link">Logout</a>
+                    </div>
+                </nav>
+               <div class="main-content ">
+                    <!-- top navigation -->
+    
+                <div style="clear: both;"></div>
+    
+                <!-- content dashboard -->
+    
+                <h2 class="ml-3" style="margin-top: 70px;">Hasil Sementara</h2>
+                <p class="ml-3 desc">Dibawah ini adalah daftar kandidat</p>
+    
+                <!-- card -->
+    
+                <div class="container">
+                <div class="content-container" style="margin-top: 120px; margin-left: 0px;">
 
-          
-          
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-            <style>
-                    html{
-                        overflow-x: scroll;
-                    }
 
-                    .detail{
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        bottom: 30px;
-                    }
-                    .card{
-                        padding-bottom: 50px;
-                        margin-right: 20px;
-                    }
 
-                    .card-container{
-                        display: flex;
-                    }
+    <!-- card -->
+                <div class="row">
+                        <?php foreach($ketua_1 as $daftar): ?>
+                    <div class="col " style="padding: 0 !important;" >
 
-                    @media only screen and ( max-width : 768px){
-                        .card-container{
-                            display: flex;
-                            flex-direction: column;
-                            width: 100%;
+                        <div class="card mx-auto mt-3 mb-3" style="min-width:19rem; max-width:19rem; position: relative;">
+                            <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $daftar['foto'] ?>" style="width:100%; height:300px;"></div>
+                            <div class="card-body">
+                                <h4 class="card-title text-center text-info p-2" ><?= $daftar['nama'] ?></h4>
                             
-                        }
+                                <p class="card-text "><h1 class="text-center jumlah">hi</h1></p>
+                                <a href="<?= base_url(); ?>admin/detail_kandidat_1/<?= $daftar['id'] ?>" class="btn detail btn-success" style="width: 100%; ">Lihat Detail</a>
+                            </div>
 
-                        .card{
-                            margin-top: 50px;
-                            
-                        }
-                    }
+                        </div>
 
 
-            </style>
+
+                    </div>
+                        <?php endforeach;?>
+                </div>
+
+    <!-- card 2 -->
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .content-main{
+                margin-left: 17%;
+            }
+
+            @media screen and (max-width:768px){
+                .content-main{
+                    margin-left: 0;
+                }
+            }
+        </style>
+
+
+        </body>
+         
+
             <script>
-                window.onload = function(){
+            window.onload = function(){
+                    
+                    var toggler = document.querySelector('#menu-toggler')
+                    var element = document.querySelector('#sidebar-content')
+                    var btn = document.querySelector('.close')
+                    var side = document.querySelector('.side-menu')
+                    var header = document.querySelector('.header-name')
+                
+                    toggler.addEventListener('click' ,function(){
+                        element.style.display = 'inline'
+                        element.style.position = 'fixed'
+                        element.style.marginLeft = "0"
+                        element.style.width = '70%'
+                        element.style.transition = 'all ease out .3s'
+                        side.style.display =' inline-block'
+                        header.style.visibility = 'visible'
+                        
+                        btn.style.visibility ='visible'
+                    })
+                    
+                
+                    btn.addEventListener('click' , function(){
+                        element.style.display = 'none'
+                    })
+
+
+                    // ajax
+
                     const render_image = () =>{
                         let image = document.querySelectorAll('.img')
                         image.forEach(img => {
@@ -203,12 +161,9 @@
 
 
                   
+            var el = document.querySelectorAll('.jumlah')
             function get_pemilih(){
                 var xhr = new XMLHttpRequest();
-                var el = document.querySelector('.jumlah')
-                var el2 = document.querySelector('.jumlah2')
-                var el3 = document.querySelector('.jumlah3')
-                var el4 = document.querySelector('.jumlah4')
                 // var el2 = document.querySelector('.masih')
                 //             url : "",
                 var url = '<?= base_url('admin/showHasil'); ?>';
@@ -221,13 +176,21 @@
                          pemilih = JSON.parse(obj)
                         // console.log(pemilih.length)
 
-                     
+
                       
                             //  console.log(pemilih[i]['jumlah'])
-                             el.innerHTML = `<h1 class="text-center jumlah">${pemilih[0]['jumlah']}</h1>`
-                             el2.innerHTML = `<h1 class="text-center jumlah">${pemilih[1]['jumlah']}</h1>`
-                             el3.innerHTML = `<h1 class="text-center jumlah">${pemilih[2]['jumlah']}</h1>`
-                             el4.innerHTML = `<h1 class="text-center jumlah">${pemilih[3]['jumlah']}</h1>`
+
+                            
+                            var i;
+
+                            for(i=0; i < pemilih.length ; i++){
+                                el.forEach((element) => element.innerHTML = `<h1 class="text-center ">${pemilih[i]['jumlah']}</h1>`)
+
+                                
+                                el.innerHTML = '0'
+                                console.log(pemilih[i]['jumlah'])
+                                
+                            }
                              
                             
                   
@@ -245,5 +208,5 @@
 
                 }
 
+                
             </script>
-            <script src="<?= base_url('assets/js/admin/lihat_hasil.js'); ?>">

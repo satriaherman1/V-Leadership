@@ -2,157 +2,175 @@
 
 <link rel="stylesheet" href="<?= base_url('assets/css/admin/index.css');?>">
     </head>
-        <body>
-
-<!-- admin sidebar -->
-        <nav class="nav m-auto    text-body" style="height: 70px; width:100% !important; background:  #fff; position:relative;">
-            <!-- <h3 class="nav-link mx-auto" style="line-height: 50px;">SMEA_PILKETOS</h3> -->
+      <body>
           
-                <a href="<?= base_url('admin/logout'); ?>" class="mr-5 text-body" style="text-decoration:none;  line-height: 70px; right:10px; position:absolute;"> <i class="fas fa-sign-out-alt"></i> logout </a>
-        
+      <div class="row">
+        <div class="col-md-2 col-sm-12 fixed-top" id="sidebar-content" >
+            <div id="sidebar ">
+                <div class="side-header">
+                    <span class="close text-white" onclick="close()">x</span>
+                    <img src="<?= base_url('assets/resources/home/icon-app.png') ?> " class=" mr-2 header-img" width="40px"  height="40px" alt="" srcset="">
 
-        </nav>
-          
-            <div class="row" >
-                <div class="col-md-2">
-            
-                    <div class="wrapper">
+                    
+                    <h6 class ="header-name mt-5">V-Leadership</h6>
 
-                        <nav id="sidebar" style="  background: #fff;">
+                    <div style="clear: both;"></div>
+                    <hr style="height: .3px; background: #4D4D98;">
+                </div>
 
-                            <div class="side-brand mt-3">
-                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="25px" height="25px" style="border-radius:100p; float:left" alt="" srcset="">
-                                <p class="brand-name">V-Leadership</p>
+                <div class="side-content" style="position: relative;">
+                    <ul class="list-group " style="width: 100%; position: absolute;">
+                        <li class="list-group-item mini-side-content side-menu">core</li>
+                        <li class="list-group-item  active side-menu" style="font-size: 17px;     background: #10106B; border: 0;  border-right: 8px solid #2323EE;">
+                            <i class="fas fa-columns ml-4 mr-2 "></i> <a href="<?= base_url('admin') ?>" class="text-white"> <span class="side-menu"> Dashboard</span></a> </li>
+                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"> <a href="<?= base_url('admin/daftar_kandidat') ?>"> <i class="fas fa-chart-pie ml-4 mr-2"></i> <span class="side-menu"> Statistic</span> </a>   </li>
+                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"> <a href="<?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-address-card ml-4 mr-2"></i><span class="side-menu"> Lihat Hasil</span> </a> </li>
+                    </ul>
+                </div>
 
+            </div>
+        </div>
+
+        <!-- main content -->
+
+        <div class="col content-main" >
+
+            <nav class="nav " style="float: right ;">
+                <div id="menu-toggler" class="ml-4" >
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                    <div class="menubar"></div>
+                </div>
+               
+                <div class="content">
+                    <a href="<?= base_url('admin/logout') ?>" class="nav-link">Logout</a>
+                </div>
+            </nav>
+           <div class="main-content ">
+                <!-- top navigation -->
+
+            <div style="clear: both;"></div>
+
+            <!-- content dashboard -->
+
+            <h2 class="" style="margin-top: 70px;">Dashboard</h2>
+            <p class="desc">Your performance below</p>
+
+            <!-- card -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card ml-2 mt-3 p-4 mx-auto" style="width: 90%; border-left:10px solid #2323EE;">
+                            <div class="clearfix">
+                                <div class="card-icon text-center" style="float: left; ">
+                                    <i class="fas fa-user img-card"  style="background-color: #2323EE;"></i>
+                                </div>
+
+                                <div class="card-desc" style="float: left;">
+                                    <h2 class="card-title mt-2 ml-4 sudah" >209</h2>
+                                    <p class="card-text ml-4 ">Sudah Memilih</p>
+                                </div>
                             </div>
-                            <hr class="mt-4">
-                            <!-- Sidebar Header -->
-                            <div class="sidebar-header text-body  mt-5" style="width: 100%;">
-                                <img src="<?= base_url() ?>assets/resources/home/icon-app.png" class="ml-4 mr-3" width="60px" height="60px" style="float:left" alt="" srcset="">
                             
-                                <p class="mb-4">
-                                <span style="margin-top: -20px; font-weight:bold; font-size:24px">Admin</span>
-                                    <!-- <br> -->
-                                    <!-- <br>
-                                    <br> -->
-                                <span style="font-size: 14px;">administrator</span>
-                                </p>
-
-                                
-
-                                <hr class="bg-white" style="width: 80%;">
-                            </div>
-
-                            <div class="sub-title ml-4 mb-3">
-                                <p class="content-subtitle" style="color:#AEAEAE; font-size:16px;" >
-                                    Core
-                                </p>
-                            </div>
-
-                            <!-- Sidebar Links -->
-                            <ul class="list-unstyled components">
-                                <li class="active item"><a href="<?= base_url() ?>admin"> <i class="fas fa-chart-line mr-3"></i>Dashboard</a></li>
-                                <li class="item"><a href="<?= base_url() ?>admin/daftar_kandidat" ><i class="fas fa-user-graduate mr-3"></i>Daftar Kandidat</a></li>
-                                <!-- Link with dropdown items -->
-                                
-                                <li class="item"><a href="<?= base_url(); ?>admin/lihat_hasil" ><i class="fas fa-poll mr-3"></i>Lihat Hasil</a></li>
-                               
-                            </ul>
-                        </nav>
-
-                        <div id="content">
-                            <button type="button" id="sidebarCollapse" class="navbar-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>  
-                
-
-                <div class="col-md-10 ml-3">
-                    <div class="side-content " style="margin-top: 40px; width:100%; margin-left:250px;" >
-                   <!-- card -->
-                    <h4 class="mt-4"><i class="fas fa-tachometer-alt mr-2"></i> Dashboard</h4>
-
-                    <hr style="width: 90%; margin-left:0;">
-
-                    <div class="card-group">
-                            <div class="row " style="width: 100%;">
-                                <div class="col-md-4 ">
-                                    
-                                    <div class="card border-0 shadow-1 card1 " id="card" style="width:100%; background-color:#fff";  >
-                                    <div class="card-body ">
-                                        <i class="fas fa-calendar-check icon-card icon-2"></i>
-                                        <h3 class="card-title mt-2 sudah" style="margin-left: 110px; font-weight:bold;"></h3>
-                                        <p class="card-text  " style="margin-left: 110px; color:#AEAEAE; ">Sudah memilih</p>
-                                        
-                                    </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    
-                                    <div class="card border-0 shadow-1 card2 " id="card" style="width:100%; background-color:#fff";  >
-                                    <div class="card-body">
-                                        <i class="fas fa-times-circle icon-card icon-3 "></i>
-                                         <h3 class="card-title mt-2 masih" style="margin-left: 110px; font-weight:bold;"> </h3> 
-                                        <p class="card-text" style="margin-left: 110px; color:#AEAEAE;">belum memilih</p>
-                                        
-                                    </div>
-                                </div>
-                                </div>
-                                
-                                <div class="col-md-4">
-                                    
-                                    <div class="card border-0 shadow-1 card3 " id="card" style="width:100%; background-color:#fff";  >
-                                    <div class="card-body">
-                                        <i class="fas fa-users icon-card icon-1"></i>
-                                       
-                                        <h3 class="card-title mt-2" style="margin-left: 110px; font-weight:bold;"><?= $pemilih[0]['jumlah'] ?> </h3>
-                                        <p class="card-text" style="margin-left: 110px; color:#AEAEAE;">Jumlah pemilih</p>
-                                        
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                        
-                    <h4 class="mt-5"> <i class="fas fa-chart-bar mr-2"></i></i> Statistic</h4>
-                    <hr style="width: 90%; margin-left:0;">
-                        <div class="row">
-                        <div class="col-md-6">
-                            <div class="chart-container bg-white mt-4 mb-5" style="padding : 20px 30px 70px 20px; ">
-                                <canvas id="doughnutChart" class="mt-5"   ></canvas>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <div class="chart-container bg-white mt-4 mb-5" style="padding : 20px 30px 70px 20px; ">
-                                <canvas id="line" class="mt-5"   ></canvas>
-                            </div>
-                        </div>
                         </div>
                     </div>
+    
+                    <div class="col-md-4">
+                        <div class="card ml-2 mt-3 p-4 mx-auto" style="width: 90%; border-left: 10px solid  #04B1B1;">
+                            <div class="clearfix">
+                                <div class="card-icon text-center" style="float: left; ">
+                                    <i class="fas fa-thumbs-up img-card"  style="background-color: #04B1B1;"></i>
+                                </div>
+
+                                <div class="card-desc" style="float: left;">
+                                    <h2 class="card-title mt-2 ml-4 masih" style="">100</h2>
+                                    <p class="card-text ml-4" >Belum Memilih</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card ml-2 mt-3 p-4 mx-auto" style="width: 90%; border-left: 10px solid  #F1B104;">
+                            <div class="clearfix">
+                                <div class="card-icon text-center" style="float: left; ">
+                                    <i class="fas fa-comments img-card"  style="background-color: #F1B104;"></i>
+                                </div>
+
+                                <div class="card-desc" style="float: left;">
+                                    <h2 class="card-title mt-2 ml-4 jumlah" >  </h2>
+                                    <p class="card-text ml-4" >Jumlah Pemilih</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
                 </div>
             </div>
 
-            <hr> 
-            <footer class=" justify-content-center   text-center mt-4" style="padding: 0px 0px 25px 0;">
-                    <h6 cl><i class="far fa-copyright"></i> Komunitas <span style="color: #2ab7ca ;"> Teknik Informatika </span> </h6>
-                    <div class="social-media">
-                        <a href="http://facebook.com"><i class="fab fa-facebook-square text-dark mr-3"></i></a>
-                        <a href="http://instagram.com"><i class="fab fa-instagram text-dark"></i></a>
-                    </div>
-            </footer>
+            <!-- table content -->
+            <h2 class="mt-5">Top Active Users</h2>
+            <p class="desc">Top user from your websites viewers</p>
+<!-- 
+            <div class="table">
+                <table class="table mt-5 bg-white mx-auto" style="width: 90%;">
+                    <thead class="thead-light" >
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Satria</td>
+                            <td>muhammadsatriaherman@gmail.com</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                        </tr>
+    
+                        <tr>
+                            <td>1</td>
+                            <td>Satria</td>
+                            <td>muhammadsatriaherman@gmail.com</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                        </tr>
+    
+                        <tr>
+                            <td>1</td>
+                            <td>Satria</td>
+                            <td>muhammadsatriaherman@gmail.com</td>
+                            <td><span class="badge badge-success">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
 
-            <style>
-                
+            <div class="row mt-5">
+                <div class="col-md-6 mt-3">
+                    <div class="chart1 mx-auto p-4" style="width: 100%; background:#fff; ">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>  
+                </div>
 
-            </style>
+                <div class="col-md-6 mt-3">
+                    <div class="chart1 p-4" style="width: 100%; background:#fff; ">
+                        <canvas id="line"></canvas>
+                    </div>  
+                </div>
+            </div>
+
+
+           </div>
+        </div>
+    </div>
+
+      </body>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
          
@@ -169,6 +187,7 @@
                 var xhr = new XMLHttpRequest();
                 var el = document.querySelector('.sudah')
                 var el2 = document.querySelector('.masih')
+                var el3 = document.querySelector('.jumlah')
                 //             url : "",
                 var url = '<?= base_url('admin/showPemilih'); ?>';
                 xhr.open("GET" , url , true);
@@ -183,6 +202,7 @@
                         for( i=0 ; i < pemilih['sudah_memilih'].length ; i++ ){
                             el.innerHTML = `  <h3 class="card-title" style=" font-weight:bold;">${pemilih['sudah_memilih'][0]['jumlah']} </h3>`
                             el2.innerHTML = `<h3 class="card-title" style=" font-weight:bold;">`+ (pemilih['pemilih'][0]['jumlah'] - pemilih['sudah_memilih'][0]['jumlah']) +`</h3>`
+                            el3.innerHTML = `  <h3 class="card-title" style=" font-weight:bold;">${pemilih['pemilih'][0]['jumlah']} </h3> `
                             console.log(pemilih)
                         }
                         
@@ -297,6 +317,31 @@
 
                 //     show_pemilih();
                 // })
+
+                // toggle button
+
+                var toggler = document.querySelector('#menu-toggler')
+                var element = document.querySelector('#sidebar-content')
+                var btn = document.querySelector('.close')
+                var side = document.querySelector('.side-menu')
+                var header = document.querySelector('.header-name')
+
+                toggler.addEventListener('click' ,function(){
+                    element.style.display = 'inline'
+                    element.style.position = 'fixed'
+                    element.style.marginLeft = "0px"
+                    
+                    element.style.width = '70%'
+                    
+                    side.style.display =' inline-block'
+                    header.style.visibility = 'visible'
+                    btn.style.visibility ='visible'
+                })
+                
+            
+                btn.addEventListener('click' , function(){
+                    element.style.display = 'none'
+                })
 
 
 

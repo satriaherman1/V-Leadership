@@ -1,194 +1,253 @@
+
+
 body{
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
-    overflow: scroll;
-    background: #f1f3fa;
-    /* font-family: 'poppins' , sans-serif; */
+    background-color: #EEEEEE;
+    font-family: 'poppins' , sans-serif;
+    overflow-x: hidden;
 }
-/* sidebar item */
-.sidebar-header h4{
+
+#sidebar-content{
+    background-color: #07074D;
+    height: 80rem;
     color: #fff;
-    margin: 10px 0 30px 20px;
+    z-index: 99;
+    width: 100%;
+    transition: .3s;
 }
-li.active{
-    background: rgb(230, 236, 253);
-    color: #fff;
-    border-right: 7px solid rgb(41, 87, 223);
-    border-radius: 0px;
+
+
+span.close{
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+/* sidebar */
+.header-img{
+    float: left;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+
+
+nav{
     
+    background-color: #fff;
+    height: 80px;
+    margin-bottom: 80px;
+    line-height: 70px;
+    width: 101%;
+    z-index: -10;
+    margin-left: 0px;
+    position: relative;
+
+  
 }
 
-li.active a{
-    color: rgb(41, 87, 223);
-    font-weight: 500;
-}
-li.item{
-    padding: 20px 26px;
-    margin-right: 20px;
-    margin-left: 5px;
-    margin-top: 20px;
+.content{
+    position: absolute;
+    right: 10px;
+      
 }
 
-.item a{
-    color: rgb(136, 136, 136);
-    text-decoration: none;
-    font-size: 16px;
+.nav-link{
+    color: #07074D;
 }
 
-li.item:hover{
-    background:rgb(230, 236, 253);
-}
-#sidebarCollapse{
-    position: fixed;
-    width: 40px;
-    height: 40px;
+li.side-menu{
     background: none;
-    border: none;
-    margin-left: 250px;
-    margin-top: -60px;
-    transition: 1s;
-    z-index: 999;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    width: 100%;
+    color: #B4B4FF;
+    font-size: 16px;
     
-}
-#sidebarCollapse.active{
-    margin-left: 0;
-    transition: 1s;
-    
-}
-
-#sidebarCollapse span{
-    width: 70%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
 
 }
 
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px,2px);
+li.side-menu a{
+    color: #B4B4FF;
 }
 
-#sidebarCollapse span:nth-of-type(2){
-    opacity: 0;
+.active{
+    color: #fff;
 }
 
-#sidebarCollapse span:last-of-type{
-    transform: rotate(-45deg) translate(1px , -1px);
+li.dash-menu:hover{
+    background-color: #10106B;
 }
 
-#sidebarCollapse.active span{
-    opacity: 1;
-    transform: none;
-    margin: 5px auto;
+
+.main-content{
+    margin-left: 10px;
 }
 
-.wrapper{
-    display: flex;
-    perspective: 1500;
-    align-items: stretch;
+
+.card{
+    border: 0;
+    border-radius: 10px;
 }
 
-#sidebar{
-    position: fixed;
-    top: 0px;
-    max-width: 230px;
-    min-width: 230px;
-    background: #133337;
-    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: center left;
-    height: 100%;
-    z-index: 998;
+.img-card{
+    font-size: 30px;
+    padding: 20px;
+    float: left;
 }
 
-#sidebar.active{
-    margin-left: -250px;
-    transform: rotateY(100deg);
+.clearfix{
+    display: table;
 }
-/* responsive */
-@media (max-width: 768px){
-    #sidebar{
-        margin-left: -250px;
-        transform: rotateY(100deg);
-        position: fixed;
-    }
-    #sidebar.active{
-        margin-left: 0;
-        transform: none;
-       
-    }
-    #sidebarCollapse{
-        margin-left: 250px;
-        z-index: 90;
-        
-    }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type{
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
 
-    #sidebarCollapse.active span{
-        margin: 0 auto;
-    }
+.card-icon{
+    width: 30%;
+   
+   
+}
 
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-    #tambah{
-        margin: auto;
-        text-align: center;
-    }
-    
-    .content-container{
-        margin-left: -40px;
-    }
-    
-    .table_container{
-        width: 360px;
-        height: 110%;
-        padding: 40px;
-        padding-bottom: 100px;
-        margin-left: -20px;
-        position: relative;
-    }
+.card-icon i{
+   
+    padding: 25px;
+    border-radius: 200px;
+    color: #fff;
+    font-size: 36px;
+}
 
-    #daftar_kandidat_wrapper{
-        width: 450px;
-        
-    }
+.card-desc{
+    width: 10rem;
+}
 
-    a#tambah{
-        margin-top: 3px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
-    hr.footer{
-        
-        margin: 10px 1px 1px 80px;
-    }
+/* list top user */
 
-    footer{
-        margin-left: 120px;
-    }
+div.table{
+    width: 96%;
+    background: #fff;
+    overflow: scroll;
+    height: 300px;
+    padding: 14px;
+}
 
+
+.nomor{
+    color: #0808CB;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: #E9E9FF;
+    margin-right: 20px;
+}
+
+.badge{
+    margin-left: 30px;
+}
+/* hamburger menu */
+
+.menubar{
+    height: 5px;
+    width: 40px;
+    margin-top: 8px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: default;
     
 }
 
-footer{
-    margin-top: 200px;
+
+
+#menu-toggler{
+   
+    display: none;
+    background: none;
+    width: 70px;
+    height: 55px;
+    pointer-events: auto;
+    margin-top: 14px;
+    cursor: pointer;
+    
 }
+
+/* show sidebar */
+
+
+
+@media screen and ( max-width:1300px){
+    .img-card{
+        font-size: 10px;
+    }
+
+    .header-name{
+        visibility: hidden;
+    }
+
+  
+/* 
+    #sidebar-content{
+        display: none;
+    } */
+
+    .main-content{
+        margin-left: 20px;
+    }
+
+  
+    .card-icon{
+    
+        display: none;
+    }
+
+    nav{
+        z-index: 1;
+    }
+
+    span.side-menu{
+        display: none;
+    }
+}
+
+@media screen and ( max-width:768px){
+    #menu-toggler{
+        display: inline;
+    }
+
+    #sidebar-content{
+        display: none;
+        margin-left: -1000px;
+    }
+
+    nav{
+        z-index: 1;
+    }
+
+    span.side-menu{
+        display: inline-block;
+    }
+
+ 
+
+  
+}
+
+@media screen and ( max-width:480px){
+    .user{
+        font-size: 14px;
+    }
+    
+    .badge{
+        display: none;
+    }
+
+    .nomor{
+        margin-right: 8px;
+    }
+
+    span.side-menu{
+        display: inline-block;
+    }
+}
+
 
 

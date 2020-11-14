@@ -183,15 +183,15 @@
 
                            
                             
-                            let i;
+                            let i = 0;
 
                                 // el.innerHTML = `<h1 class="text-center "> ${pemilih[i]} </h1>`
-                            for(i=0; i < pemilih.length ; i++){
+                                 while( i < pemilih.length ){
                                 el.forEach((element) => { 
                                     
-                                    element.innerHTML = `<h1 class="text-center ">${pemilih[i]['nama']} </h1>` 
-                            
-                                console.log(pemilih[i]['jumlah'])
+                                    element.innerHTML = `<h1 class="text-center ">${pemilih[i]['jumlah']} </h1>` 
+                                    i++;
+                                    console.log(pemilih[i])
                             })
                                 }
                                 

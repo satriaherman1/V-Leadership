@@ -41,11 +41,14 @@
             </div>
 
             <div class="container" style="margin-top: 120px;">
+
+                <h2 class="my-2">Hasil Pemilihan</h2>
+                <p class="mb-5 ">ini adalah hasil pemilihan secara live</p>
                 <div class="row">
                     <?php foreach($ketua_1 as $daftar): ?>
 
                         <div class="col">
-                            <div class="card mx-auto mt-5" style="width: 19rem">
+                            <div class="card mx-auto mt-5 border-0 shadow" style="width: 19rem; border-radius: 10px;">
                                 <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $daftar['foto'] ?>" style="width:100%; height:300px;"></div>
                                 <h2 class=" text-info card-title text-center my-3"><?= $daftar['nama']?></h2>
                                 
@@ -258,17 +261,17 @@
                             //  console.log(pemilih[i]['jumlah'])
 
                             
-                            var i;
+                            let i = 0;
 
-                            for(i=0; i < pemilih.length ; i++){
-                                el.forEach((element) => element.innerHTML = `<h1 class="text-center ">${pemilih[i]['jumlah']}</h1>`)
-
+                            // el.innerHTML = `<h1 class="text-center "> ${pemilih[i]} </h1>`
+                            while( i < pemilih.length ){
+                            el.forEach((element) => { 
                                 
-                                
-                                console.log(pemilih[i]['jumlah'])
-                                
+                                element.innerHTML = `<h1 class="text-center ">${pemilih[i]['jumlah']} </h1>` 
+                                i++;
+                                console.log(pemilih[i])
+                            })
                             }
-                             
                             
                   
                         

@@ -75,7 +75,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center text-info p-2" ><?= $daftar['nama'] ?></h4>
                             
-                                <p class="card-text "><h1 class="text-center jumlah">hi</h1></p>
+                                <p class="card-text "><h1 class="text-center jumlah"><?= $daftar['jumlah'] ?></h1></p>
                                 <a href="<?= base_url(); ?>admin/detail_kandidat_1/<?= $daftar['id'] ?>" class="btn detail btn-success" style="width: 100%; ">Lihat Detail</a>
                             </div>
 
@@ -161,12 +161,13 @@
 
 
                   
-            var el = document.querySelectorAll('.jumlah')
+           
             function get_pemilih(){
                 var xhr = new XMLHttpRequest();
                 // var el2 = document.querySelector('.masih')
                 //             url : "",
                 var url = '<?= base_url('admin/showHasil'); ?>';
+                var el = document.querySelectorAll('.jumlah')
                 xhr.open("GET" , url , true);
                 xhr.send()
                 xhr.onload = function(){
@@ -180,17 +181,23 @@
                       
                             //  console.log(pemilih[i]['jumlah'])
 
+                           
                             
-                            var i;
+                            let i;
 
+                                // el.innerHTML = `<h1 class="text-center "> ${pemilih[i]} </h1>`
                             for(i=0; i < pemilih.length ; i++){
-                                el.forEach((element) => element.innerHTML = `<h1 class="text-center ">${pemilih[i]['jumlah']}</h1>`)
-
-                                
-                                el.innerHTML = '0'
+                                el.forEach((element) => { 
+                                    
+                                    element.innerHTML = `<h1 class="text-center ">${pemilih[i]['nama']} </h1>` 
+                            
                                 console.log(pemilih[i]['jumlah'])
+                            })
+                                }
                                 
-                            }
+                              
+                                
+                                
                              
                             
                   

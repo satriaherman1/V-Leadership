@@ -8,6 +8,7 @@
             parent::__construct();
             // load model User.php
             $this->load->model('user_model');
+            $this->load->model('admin_model');
         }
 
 
@@ -164,6 +165,16 @@
         $this->session->sess_destroy();
         redirect('user/end');
     }
+
+    public function lihat_hasil(){
+        $data['judul'] = 'lihar hasil';
+        $data['ketua_1'] = $this->admin_model->index();
+
+
+        $this->load->view('templates/header' , $data);
+        $this->load->view('user/lihat_hasil' , );
+        $this->load->view('templates/header' , );
+    }
     
         public function end(){
             $data['judul'] = 'Success';
@@ -176,6 +187,8 @@
 
         
         }
+
+       
 
         
 

@@ -7,7 +7,6 @@
 
 <div class="container ">
     <form class="justify-content-center" method="post" action="<?= base_url(); ?>user/login" >
-        <img src="<?= base_url(); ?>assets/resources/home/icon-app.png" width="100px" height="100px"  alt="">
 
         <h2 class=" text-center mt-3" style="font-weight: 500; font-size:35px; ">Login </h2>
             <p class="mb-4 text-center token" style="font-size: 14px; color:#A4A4A4; margin-bottom:150px;" > Masukkan Token Anda</p>

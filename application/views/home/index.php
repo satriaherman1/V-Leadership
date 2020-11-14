@@ -18,7 +18,7 @@
 
                     <div class="image" ></div>    <h5 class="ml-2 my-auto" > V-Leadership</h5> </div>
                     <div class="nav" style="margin-top: -46px; ml-auto;">
-                            <a href="" class="nav-el-1 navigation-element nav-1" >Lihat Hasil</a>
+                            <a href="<?= base_url('user/lihat_hasil') ?>" class="nav-el-1 navigation-element nav-1" >Lihat Hasil</a>
                             <a href="<?= base_url('admin') ?>" class="navigation-element nav-1" >Login Admin</a>
 
 
@@ -36,7 +36,7 @@
 
                                 <hr style="width: 80%; height: .6px; background: #dbdbdb;" class="mx-auto">
                             </div>
-                            <a href="" class="nav-el-1 navigation-element ml-1" > <i class="fas fa-eye  mr-2" style="margin-left: 35px;"></i>Lihat Hasil</a>
+                            <a href="<?=  base_url('user/lihat_hasil')?>" class="nav-el-1 navigation-element ml-1" > <i class="fas fa-eye  mr-2" style="margin-left: 35px;"></i>Lihat Hasil</a>
                             <a href="<?= base_url('admin') ?>" class="navigation-element " > <i class="fas fa-user-cog mr-2" style="margin-left: 35px;"></i>Login Admin</a>
 
                         </div>

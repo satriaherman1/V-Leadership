@@ -145,7 +145,21 @@
                                     <p class="card-subtitle mb-4" style="font-size: 12px; color:#A4A4A4;">Web Developer & UI/UX Designer</p>
                                     <p class="card-text">An Indonesian web developer and UI/UX Designer who focused on frontend dev
                                     </p>
-                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                    <div style="width: 100%; display:flex;" class="mx-auto">
+                                            <div style="width: 33%; padding: 10px 0" class="bg-primary">
+                                            <a href="https://www.facebook.com/satria.herman.9465" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-facebook mx-auto"></i> </a>
+                                            </div>
+
+                                            <div style="width: 33%; padding: 10px 0" class="bg-success">
+                                            <a href="https://api.whatsapp.com/send?phone=+628976121070" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-whatsapp mx-auto"></i> </a>
+                                            </div>
+
+                                            <div style="width: 33%; padding: 10px 0" class="bg-dark">
+                                            <a href="https://github.com/satriaherman1/" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-github mx-auto"></i> </a>
+                                            </div>
+
+
+                                        </div>
                                 </div>
                                 </div>
                             </div>
@@ -158,7 +172,22 @@
                                         <h5 class="card-title">M. Rizki Amrullah</h5>
                                         <p class="card-subtitle mb-4"  style="font-size: 12px; color:#A4A4A4;">Network Engineer</p>
                                         <p class="card-text">Network engineer in indonesia , focused on sys adminnistrator network</p>
-                                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                        <div style="width: 100%; display:flex;" class="mx-auto">
+                                            <div style="width: 33%; padding: 10px 0" class="bg-primary">
+                                            <a href="#" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-facebook mx-auto"></i> </a>
+                                            </div>
+
+                                            <div style="width: 33%; padding: 10px 0" class="bg-success">
+                                            <a href="https://api.whatsapp.com/send?phone=+6282326070897" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-whatsapp mx-auto"></i> </a>
+                                            </div>
+
+                                            <div style="width: 33%; padding: 10px 0" class="bg-dark">
+                                            <a href="https://github.com/rzii" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-github mx-auto"></i> </a>
+                                            </div>
+
+
+                                        </div>
+                                        
                                     </div>
                                     </div>
                             </div>

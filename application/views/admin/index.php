@@ -112,8 +112,8 @@
             </div>
 
             <!-- table content -->
-            <h2 class="mt-5">Top Active Users</h2>
-            <p class="desc">Top user from your websites viewers</p>
+            <h2 class="mt-5">Statistic</h2>
+            <p class="desc">Statistic Saat ini </p>
 <!-- 
             <div class="table">
                 <table class="table mt-5 bg-white mx-auto" style="width: 90%;">
@@ -152,13 +152,13 @@
             </div> -->
 
             <div class="row mt-5">
-                <div class="col-md-6 mt-3">
+                <div class="col mt-3 chart-1">
                     <div class="chart1 mx-auto p-4" style="width: 100%; background:#fff; ">
                         <canvas id="doughnutChart"></canvas>
                     </div>  
                 </div>
 
-                <div class="col-md-6 mt-3">
+                 <div class="col mt-3">
                     <div class="chart1 p-4" style="width: 100%; background:#fff; ">
                         <canvas id="line"></canvas>
                     </div>  
@@ -169,6 +169,14 @@
            </div>
         </div>
     </div>
+		  
+	<style>
+        @media screen and ( max-width:768px){
+            .chart-1{
+                display: none;
+            }
+        }
+    </style>
 
       </body>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>

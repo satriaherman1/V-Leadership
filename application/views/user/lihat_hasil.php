@@ -50,7 +50,7 @@
                         <div class="col">
                             <div class="card mx-auto mt-5 border-0 shadow" style="width: 19rem; border-radius: 10px;">
                                 <div class="img" bg-image="<?= base_url();?>assets/resources/kandidat/<?= $daftar['foto'] ?>" style="width:100%; height:300px;"></div>
-                                <h2 class=" text-info card-title text-center my-3"><?= $daftar['nama']?></h2>
+                                <h3 class=" text-info card-title text-center my-3"><?= $daftar['nama']?></h3>
                                 
                                 <h1 class="text-center my-4 jumlah"><?= $daftar['jumlah']?></h1>
                             </div>
@@ -62,6 +62,10 @@
 
 
             <style>
+                body{
+                    font-family: 'poppins' , sans-serif;
+                }
+
                 .image{
                     height: 30px;
                     width: 30px;

@@ -24,9 +24,9 @@
                         <ul class="list-group " style="width: 100%; position: absolute;">
                             <li class="list-group-item mini-side-content side-menu">core</li>
                             <li class="list-group-item   side-menu dash-menu" >
-                                <i class="fas fa-columns ml-4 mr-2 "></i> <a href="<?= base_url('admin') ?>" > <span class="side-menu"> Dashboard</span></a> </li>
-                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;    "> <a href="<?= base_url('admin/daftar_kandidat') ?>" > <i class="fas fa-chart-pie ml-4 mr-2"></i> <span class="side-menu"> Statistic</span> </a>   </li>
-                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;  background: #10106B; border: 0;  border-right: 8px solid #2323EE; " > <a class="text-white" href="  <?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-address-card ml-4 mr-2"></i><span class="side-menu"> Lihat Hasil</span> </a> </li>
+                                 <a href="<?= base_url('admin') ?>" ><i class="fas fa-columns ml-4 mr-3 "></i><span class="side-menu"> Dashboard</span></a> </li>
+                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;    "> <a href="<?= base_url('admin/daftar_kandidat') ?>" > <i class="fas fa-address-card ml-4 mr-3"></i><span class="side-menu">Kandidat</span> </a>   </li>
+                            <li class="list-group-item side-menu dash-menu" style="font-size: 17px;  background: #10106B; border: 0;  border-right: 8px solid #2323EE; " > <a class="text-white" href="  <?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-chart-pie ml-4 mr-3"></i><span class="side-menu">Lihat Hasil</span> </a> </li>
                         </ul>
                     </div>
     
@@ -37,7 +37,7 @@
     
             <div class="col content-main">
     
-                <nav class="nav " style="float: right ;">
+                <nav class="nav " style="float: right ; z-index:1;">
                     <div id="menu-toggler" class="ml-4" >
                         <div class="menubar"></div>
                         <div class="menubar"></div>

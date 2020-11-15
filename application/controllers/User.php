@@ -167,7 +167,7 @@
     }
 
     public function lihat_hasil(){
-        $data['judul'] = 'lihar hasil';
+        $data['judul'] = 'lihat hasil';
         $data['ketua_1'] = $this->admin_model->index();
 
 

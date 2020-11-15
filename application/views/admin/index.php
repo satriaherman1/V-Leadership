@@ -21,10 +21,10 @@
                 <div class="side-content" style="position: relative;">
                     <ul class="list-group " style="width: 100%; position: absolute;">
                         <li class="list-group-item mini-side-content side-menu">core</li>
-                        <li class="list-group-item  active side-menu" style="font-size: 17px;     background: #10106B; border: 0;  border-right: 8px solid #2323EE;">
-                            <i class="fas fa-columns ml-4 mr-2 "></i> <a href="<?= base_url('admin') ?>" class="text-white"> <span class="side-menu"> Dashboard</span></a> </li>
-                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"> <a href="<?= base_url('admin/daftar_kandidat') ?>"> <i class="fas fa-chart-pie ml-4 mr-2"></i> <span class="side-menu"> Statistic</span> </a>   </li>
-                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"> <a href="<?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-address-card ml-4 mr-2"></i><span class="side-menu"> Lihat Hasil</span> </a> </li>
+                        <li class="list-group-item  active side-menu mt-2" style="font-size: 17px;     background: #10106B; border: 0;  border-right: 8px solid #2323EE;">
+                           <a href="<?= base_url('admin') ?>" class="text-white"> <i class="fas fa-columns ml-4 mr-3 "></i> <span class="side-menu"> Dashboard</span></a> </li>
+                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"><a href="<?= base_url('admin/daftar_kandidat') ?>"><i class="fas fa-address-card ml-4 mr-3"></i><span class="side-menu"> Kandidat</span> </a>   </li>
+                        <li class="list-group-item side-menu dash-menu" style="font-size: 17px;"> <a href="<?= base_url('admin/lihat_hasil') ?>"> <i class="fas fa-chart-pie ml-4 mr-3"></i><span class="side-menu"> Lihat Hasil</span> </a> </li>
                     </ul>
                 </div>
 

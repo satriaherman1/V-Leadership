@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'db-vldr.mysql.database.azure.com',
+	'username' => 'dbroot@db-vldr',
+	'password' => 'Leadershipwokeee!123',
 	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -88,7 +88,10 @@ $db['default'] = array(
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => false,
+	'encrypt' => array (
+		'ssl_ca' => realpath('./BaltimoreCyberTrustRoot.crt'),
+		'ssl_verify' => FALSE
+	),
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),

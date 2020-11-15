@@ -170,7 +170,7 @@
                                     </div>
                                     <div class="card-body mt-5">
                                         <h5 class="card-title">M. Rizky Amrullah</h5>
-                                        <p class="card-subtitle mb-4"  style="font-size: 12px; color:#A4A4A4;">Network Engineer</p>
+                                        <p class="card-subtitle mb-4"  style="font-size: 12px; color:#A4A4A4;">Cloud & System Engineer</p>
                                         <p class="card-text">Cloud & System Engineer, focused on SysAdmin, DevOps and CI/CD Automation</p>
                                         <div style="width: 100%; display:flex;" class="mx-auto">
                                             <div style="width: 33%; padding: 10px 0" class="bg-primary">

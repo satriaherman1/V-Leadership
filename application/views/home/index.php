@@ -311,7 +311,7 @@
                 .osis{
                     background-position: center center;
                     background-size: cover;
-                    background-image: url('<?= base_url()?>assets/resources/home/ecos.jpg');
+                    background-image: url('<?= base_url()?>assets/resources/home/mc.jpg');
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 700px;

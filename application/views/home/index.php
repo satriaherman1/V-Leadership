@@ -169,9 +169,9 @@
                                         <img src="<?= base_url() ?>assets/resources/home/rizki.jpeg" width="100px" height="100px" alt="" class="profile">
                                     </div>
                                     <div class="card-body mt-5">
-                                        <h5 class="card-title">M. Rizki Amrullah</h5>
+                                        <h5 class="card-title">M. Rizky Amrullah</h5>
                                         <p class="card-subtitle mb-4"  style="font-size: 12px; color:#A4A4A4;">Network Engineer</p>
-                                        <p class="card-text">Network engineer in indonesia , focused on sys adminnistrator network</p>
+                                        <p class="card-text">Cloud & System Engineer, focused on SysAdmin, DevOps and CI/CD Automation</p>
                                         <div style="width: 100%; display:flex;" class="mx-auto">
                                             <div style="width: 33%; padding: 10px 0" class="bg-primary">
                                             <a href="#" class="text-white " style=" padding : 10px 25px !important; width:30%;"> <i class="fab fa-facebook mx-auto"></i> </a>

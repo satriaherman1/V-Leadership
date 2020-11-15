@@ -44,7 +44,7 @@ class Admin extends CI_Controller{
             $this->load->view('admin/login');
             $this->load->view('templates/footer');
 
-            if( $this->input->post('username') == 'ecos' && $this->input->post('password') == 'ecos-esport' ){
+            if( $this->input->post('username') == 'mc' && $this->input->post('password') == 'main-catur' ){
                 $this->session->login = true;
                 redirect('admin/index');
                 

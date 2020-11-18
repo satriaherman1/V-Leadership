@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'votin.database.windows.net',
+	'username' => 'satria',
+	'password' => 'Hertsensei08;',
 	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

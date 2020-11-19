@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1:56063',
-	'username' => 'azure',
-	'password' => '6#vWHD_$',
+	'hostname' => 'tcp:coba-app.database.windows.net',
+	'username' => 'satria',
+	'password' => 'Hertsensei08;',
 	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

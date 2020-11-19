@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'votin.database.windows.net',
+	'hostname' => 'v-leadership.scm.azurewebsites.net',
 	'username' => 'satria',
 	'password' => 'Hertsensei08;',
 	'database' => 'leadership',

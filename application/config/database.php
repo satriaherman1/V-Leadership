@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'v-leadership.scm.azurewebsites.net',
-	'username' => 'satria',
-	'password' => 'Hertsensei08;',
+	'hostname' => '127.0.0.1:56063',
+	'username' => 'azure',
+	'password' => '6#vWHD_$',
 	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

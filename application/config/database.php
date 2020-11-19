@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'tcp:votin.database.windows.net',
+	'hostname' => 'votin.database.windows.net',
 	'username' => 'satria',
 	'password' => 'Hertsensei08;',
 	'database' => 'leadership',

@@ -18,24 +18,26 @@
     <h2 style="margin-top: 150px; color:#fff;">Pilih Kandidat calon Ketua </h2>
             <hr style="height: 1px; background-color:#fff;">
         <div class="content-container">
-           
-            <?php foreach($ketua_1 as $daftar): ?>
-            <div class="card   border-0 shadow-sm" style=" width:100%; "  data-aos="fade-left">
-            <div bg-img="<?= base_url();?>/assets/resources/kandidat/<?= $daftar['foto'];?>" class="card-img-top img" > </div>
-            <div class="card-body">
-                <h5 class="card-title"><?= $daftar['nama']; ?></h5>
-                <p class="card-text text-body"><?= $daftar['kelas'];?></p>
+           <div class="row">
+		    <?php foreach($ketua_1 as $daftar): ?>
+		   	<div class="col" >
+			    <div class="card   border-0 shadow-sm" style=" width:100%; "  data-aos="fade-left">
+			    <div bg-img="<?= base_url();?>/assets/resources/kandidat/<?= $daftar['foto'];?>" class="card-img-top img" > </div>
+			    <div class="card-body">
+				<h5 class="card-title"><?= $daftar['nama']; ?></h5>
+				<p class="card-text text-body"><?= $daftar['kelas'];?></p>
 
-                <div id="collapse" style="display: none;">
-                    <p ><?= $daftar['visi']?></p>
-                </div>
+				<div id="collapse" style="display: none;">
+				    <p ><?= $daftar['visi']?></p>
+				</div>
 
-            
-                <a href="<?= base_url();?>user/detail_ketua_1/<?= $daftar['id']; ?>" class="btn btn-success">pilih</a>
-            </div>
-            </div>
-            <?php endforeach;?>
 
+				<a href="<?= base_url();?>user/detail_ketua_1/<?= $daftar['id']; ?>" class="btn btn-success">pilih</a>
+			    </div>
+			    </div>
+		   	</div>
+		    <?php endforeach;?>
+	   </div>
         </div>
     </div>
 <!-- footer -->

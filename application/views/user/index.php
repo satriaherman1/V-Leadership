@@ -18,7 +18,7 @@
     <h2 style="margin-top: 150px; color:#fff;">Pilih Kandidat calon Ketua </h2>
             <hr style="height: 1px; background-color:#fff;">
         <div class="content-container">
-           <div class="row">
+           
 		    <?php foreach($ketua_1 as $daftar): ?>
 		   	
 			    <div class="card mx-auto  border-0 shadow-sm mb-4" style=" width:18rem; "  data-aos="fade-left">
@@ -37,7 +37,7 @@
 			    
 		   	</div>
 		    <?php endforeach;?>
-	   </div>
+	   
         </div>
     </div>
 <!-- footer -->

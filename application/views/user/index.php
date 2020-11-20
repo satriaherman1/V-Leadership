@@ -21,7 +21,7 @@
            <div class="row">
 		    <?php foreach($ketua_1 as $daftar): ?>
 		   	<div class="col-md-3 col-sm-12" >
-			    <div class="card mx-auto  border-0 shadow-sm" style=" width:18rem; "  data-aos="fade-left">
+			    <div class="card mx-auto  border-0 shadow-sm mb-4" style=" width:18rem; "  data-aos="fade-left">
 			    <div bg-img="<?= base_url();?>/assets/resources/kandidat/<?= $daftar['foto'];?>" class="card-img-top img" > </div>
 			    <div class="card-body">
 				<h5 class="card-title"><?= $daftar['nama']; ?></h5>

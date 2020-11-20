@@ -20,7 +20,7 @@
         <div class="content-container">
            
             <?php foreach($ketua_1 as $daftar): ?>
-            <div class="card   border-0 shadow-sm" style="width: 18rem;" data-aos="fade-left">
+            <div class="card   border-0 shadow-sm"  data-aos="fade-left">
             <div bg-img="<?= base_url();?>/assets/resources/kandidat/<?= $daftar['foto'];?>" class="card-img-top img" > </div>
             <div class="card-body">
                 <h5 class="card-title"><?= $daftar['nama']; ?></h5>
@@ -39,15 +39,7 @@
         </div>
     </div>
 <!-- footer -->
-    <footer class=" justify-content-center text-center mt-4" style="padding: 20px; width:100%; background: #fff;">
-    <div class="footer-container" >
-        <div class="social-media">
-        <h6 class="text-body mt-4" ><i class="far fa-copyright"></i> Satria Herman 2020  </h6>
-            <a href="https://www.facebook.com/satria.herman.9465"><i class="fab fa-facebook-square text-dark mr-3"></i></a>
-            <a href="http://instagram.com"><i class="fab fa-instagram text-dark"></i></a>
-        </div>
-    </div>
-</footer>
+ 
 
 <style>
     body{

@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'tcp:coba-app.database.windows.net',
-	'username' => 'satria',
-	'password' => 'Hertsensei08;',
-	'database' => 'leadership',
+	'hostname' => '	sql313.epizy.com',
+	'username' => '	epiz_25676326',
+	'password' => 'LTDnwLXjun;',
+	'database' => 'epiz_25676326_leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

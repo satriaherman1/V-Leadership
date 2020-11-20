@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '	sql313.epizy.com',
-	'username' => '	epiz_25676326',
-	'password' => 'LTDnwLXjun;',
-	'database' => 'epiz_25676326_leadership',
+	'hostname' => 'leadership-app.mysql.database.azure.com',
+	'username' => 'satria@leadership-app',
+	'password' => 'Hertsensei08;',
+	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

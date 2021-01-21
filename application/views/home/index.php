@@ -163,7 +163,7 @@
                                 </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+<!--                             <div class="col-md-6">
                                 <div class="card border-0 shadow mx-auto aos" style="width: 19rem;" data-aos="fade-right">
                                     <div class="bg-card" bg-img="<?= base_url() ?>assets/resources/home/bg-card.jpg">
                                         <img src="<?= base_url() ?>assets/resources/home/rizki.jpeg" width="100px" height="100px" alt="" class="profile">
@@ -190,7 +190,7 @@
                                         
                                     </div>
                                     </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

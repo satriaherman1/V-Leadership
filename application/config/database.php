@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'databases.000webhost.com',
-	'username' => 'id15971147_hertsensei',
-	'password' => '4-UBkt?ikc+0eWFI;',
-	'database' => 'id15971147_leadership',
+	'hostname' => 'leadershipvote.mysql.database.azure.com',
+	'username' => 'satria@leadershipvote',
+	'password' => 'Hertsensei08',
+	'database' => 'leadership',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -88,7 +88,10 @@ $db['default'] = array(
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
-	'encrypt' => false,
+	'encrypt' => array (
+		'ssl_ca' => realpath('./BaltimoreCyberTrustRoot.crt'),
+		'ssl_verify' => FALSE
+	),
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),

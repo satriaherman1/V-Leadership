@@ -135,7 +135,7 @@
                     <div class="container">
                         <h2 class="text-center mt-5 mb-5 text-white">Tentang Pengembang</h2>
                         <div class="row " style="margin-top: 100px;">
-                            <div class="col-md-6">
+                            <div class="col-md">
                                 <div class="card mb-5 aos border-0 shadow mb-4 mx-auto" style="width: 19rem;" data-aos="fade-left">
                                 <div class="bg-card" bg-img="<?= base_url() ?>assets/resources/home/bg-card.jpg">
                                     <img src="<?= base_url() ?>assets/resources/home/fotoku.jpg" width="100px" height="100px" alt="" class="profile">
